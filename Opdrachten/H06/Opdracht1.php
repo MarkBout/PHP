@@ -10,13 +10,11 @@ try{
 $query = "SELECT * FROM student";
 $result = $dbc->query($query) or die("Error querying");
 ?>
-
 <style>
     table{
         border: 1px solid black;
     }
 </style>
-
 <table>
 
     <?php

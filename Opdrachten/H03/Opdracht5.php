@@ -1,5 +1,5 @@
 <?php
-$leeftijd = 10;
+$leeftijd = 9;
 $bedrag = 10;
 
 //Mensen boven de 65 en 12 en onder 50% korting geven
@@ -16,10 +16,8 @@ echo $bedrag;
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>title</title>
+    <title>title</title>k
 </head>
 <body>
-
 </body>
 </html>
