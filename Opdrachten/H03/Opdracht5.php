@@ -16,7 +16,7 @@ echo $bedrag;
 <!DOCTYPE html>
 <html>
 <head>
-    <title>title</title>k
+    <title>title</title>
 </head>
 <body>
 </body>

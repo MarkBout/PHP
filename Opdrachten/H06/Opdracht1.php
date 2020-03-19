@@ -1,14 +1,13 @@
 <?php
+$conn = mysqli_connect("localhost", "52824@localhost", "krijgkanker", "52824");
 
-try{
-    $dbc = new PDO('mysql:host=localhost;dbname=school;port=3306' , 'root', '');
-}catch (PDOException $e){
-    echo 'Connection failed: ' . $e->getMessage();
+if ($conn -> connect_errno) {
+    echo "Failed to connect to MySQL: " . $conn -> connect_error;
     exit();
 }
-
-$query = "SELECT * FROM student";
-$result = $dbc->query($query) or die("Error querying");
+//sql querry aangeven en naar de DB sturen
+$querry = "SELECT * FROM student";
+$result = $conn->query($querry);
 ?>
 <style>
     table{

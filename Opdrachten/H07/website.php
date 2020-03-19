@@ -4,6 +4,14 @@ if (isset($_GET['logout'])) {
     $_SESSION = array();
     session_destroy();
 }
+if (isset($_GET['deny'])){
+    echo '<p style="color: red">Login gegevens onjuist!</p>';
+    session_destroy();
+}
+if (isset($_SESSION['gebruiker'])){
+    $_SESSION = array();
+    session_destroy();
+}
 ?>
 <html lang="en">
 <head>
@@ -21,7 +29,7 @@ if (isset($_GET['logout'])) {
 <body>
 <form action="Opdracht1.php" method="post">
     Gebruikersnaam <input type="text" name="gebruikersnaam" required><br>
-    Wachtwoord <input id="ww" type="text" name="wachtwoord" required><br>
+    Wachtwoord <input id="ww" type="password" name="wachtwoord" required><br>
     <input type="submit" value="Inloggen">
 </form>
 </body>

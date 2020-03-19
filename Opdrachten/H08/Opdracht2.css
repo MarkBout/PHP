@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
+body{
+    text-align: center;
+    font-family: 'Arial', serif;
+    font-weight: bold;
+    font-size: 4.5vh;
+}
+
+.pics{
+    margin-bottom: 40px;
+}
+
+#font{
+    font-family: "Bangers", serif;
+    color: #ff8400;
+}

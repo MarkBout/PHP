@@ -1,6 +1,6 @@
 <?php
 //connectie maken met DB en kijken of deze gelukt is
-$conn = mysqli_connect("localhost", "root", "", "phpcursus","3306");
+$conn = mysqli_connect("localhost", "52824@localhost", "krijgkanker", "52824");
 
 if ($conn -> connect_errno) {
     echo "Failed to connect to MySQL: " . $conn -> connect_error;
