@@ -13,6 +13,16 @@
     <input type="text" name="minprijs" id="minprijs"><br>
     <label for="maxprijs">MaxPrijs </label>
     <input type="text" name="maxprijs" id="maxprijs"><br>
+    <label for="cars">Merk:</label>
+    <select id="cars" name="merk">
+        <option value=""></option>
+        <option value="Fiat">Fiat</option>
+        <option value="Volkswagen">Volkswagen</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Opel">Opel</option>
+        <option value="Ferrari">Ferrari</option>
+        <option value="Audi">Audi</option>
+    </select><br>
     <input type="submit" value="Zoeken">
 </form>
 <?php
@@ -21,11 +31,13 @@ require ('Autooverzicht.php');
 
 $minprijs = isset($_GET['minprijs']) && !empty($_GET['minprijs']) ? $_GET['minprijs'] : 0;
 $maxprijs = isset($_GET['maxprijs']) && !empty($_GET['maxprijs']) ? $_GET['maxprijs'] : 999999;
+$merk = isset($_GET['merk']) && !empty($_GET['merk']) ? $_GET['merk'] : empty($_GET['merk']);
+
 
 $autoos = new Autooverzicht();
 
 
-foreach ($autoos->getGefilterdeLijst($minprijs, $maxprijs) as $auto){
+foreach ($autoos->getGefilterdeLijst($minprijs, $maxprijs, $merk) as $auto){
     echo $auto->getMerk() . ' - ' . "\xE2\x82\xAc".$auto->getPrijs() . '<br>';
     echo '<img src="' . $auto->getImage() .'" alt="Plaatje van een auto"> <br>';
 }
