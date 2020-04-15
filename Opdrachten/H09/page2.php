@@ -21,13 +21,13 @@
 </nav>
 <div class="container">
     <form action='page2.php' method='post'>
-        <label for="meelveld"><b>Soort meel</b></label>
-        <input type="text" name="meel" id="meelveld"><br>
-        <label for="vormveld"><b>Vorm broodje</b></label>
-        <input type="text" name="vorm" id="vormveld"><br>
-        <label for="gewichtveld"><b>Gewicht (eenheid erbij)</b></label>
-        <input type="text" name="gewicht" id="gewichtveld"><br>
-        <input type="submit" name="add" value="Voeg brood toe">
+        <label for="meelveld"><b>Soort meel</b></label><br>
+        <input type="text" name="meel" id="meelveld" required><br>
+        <label for="vormveld"><b>Vorm broodje</b></label><br>
+        <input type="text" name="vorm" id="vormveld" required><br>
+        <label for="gewichtveld"><b>Gewicht (eenheid erbij)</b></label><br>
+        <input type="text" name="gewicht" id="gewichtveld" required><br><br>
+        <input id="knop" type="submit" name="add" value="Voeg brood toe">
     </form>
 </div>
 <?php
