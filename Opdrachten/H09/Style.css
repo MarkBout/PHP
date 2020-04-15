@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url("img/bakery.jpg");
+    background-size: 100%;
+}
+header{
+    background-image: url("img/header.jpg");
+    padding: 10px;
+    color: white;
+}
+ul{
+    list-style: none;
+    background-color: rgba(0,0,0,1);
+
+}
+li{
+    width: 10%;
+    display: inline;
+    padding-right: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+#broodjes{
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+table{
+    background-color: rgba(255,255,255,0.8);
+    width: 100%;
+}
+
+form{
+    background-color: rgba(255,255,255,0.8);
+    width: 60%;
+}
+#meelveld
