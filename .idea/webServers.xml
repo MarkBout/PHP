@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2e2d8063-918b-481b-a987-166248ce74dc" name="apache" url="http://localhost/ROC_PHP">
+        <fileTransfer port="0" mountedRoot="C:\xampp\htdocs\ROC_PHP" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

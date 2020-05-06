@@ -6,7 +6,7 @@ if ($conn -> connect_errno) {
     exit();
 }
 //sql querry aangeven en naar de DB sturen
-$querry = "SELECT * FROM student";
+$querry = "SELECT * FROM cursist";
 $result = $conn->query($querry);
 ?>
 <style>
